@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
 
 body {
     background-color: #FAFAFA;
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family:'Alegreya', serif;
     margin:0;
     padding:0;
 }
@@ -30,21 +33,22 @@ ul{
 
 header{
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
 header div{
-    padding-top : .5rem;
-    padding-left: .5rem;
+    padding-top : 2rem;
+    padding-left: 2rem;
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
 }
 
 .menu{
-    padding-top : .5rem;
-    padding-right: 1rem;
+    padding-top : 2rem;
+    padding-right: 2rem;
     margin-top: 10%;
-    width : 25px;
+    width : 27px;
 }
 
 nav{
@@ -57,7 +61,7 @@ nav{
 }
 
 .hero-section{
-    background-color: grey;
+    padding-top: 13rem;
     height: 24rem;
 }
 
@@ -69,16 +73,34 @@ nav{
 }
 
 .hero-section h1{
-    font-size: 1.5rem;
+    width: 70%;
+    line-height: 2.5rem;
+    text-align: left;
+    padding-left: 2rem ;
+    font-size: 2.5rem;
     margin : 0;
-
+    font-family: 'Titillium Web', sans-serif;
 
 }
 
 .subhead{
-    margin-top: 1;
-    margin-bottom: 2rem;
-    font-size: 0.8rem;
+    text-align: left;
+    padding-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: .9rem;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.subhead2{
+    line-height: 1.8rem;
+    width: 80%;
+    text-align: left;
+    padding-left: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 4rem;
+    font-size: 1.4rem;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 .primary-link{
