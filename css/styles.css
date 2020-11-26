@@ -2,10 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #FAFAFA;
     /* font-family: 'Montserrat', sans-serif; */
-    font-family:'Alegreya', serif;
+    /* font-family:'Alegreya', serif; */
+    font-family: 'Titillium Web', sans-serif;
     margin:0;
     padding:0;
 }
@@ -23,8 +28,7 @@ ul{
 }
 
 .container{
-    text-align: center;
-    padding : .8em 1.2em;
+    text-align: left;
 }
 
 .hide-mobile{
@@ -32,21 +36,26 @@ ul{
 }
 
 header{
+    background-color: #FAFAFA;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin:1.1rem 0rem ;
+    
 }
 
 header div{
-    padding-top : 2rem;
-    padding-left: 2rem;
+    /* padding-top : 2.3rem; */
+    padding-left: 2.3rem;
     font-weight: 600;
     font-size: 1.8rem;
+    
 }
 
 .menu{
-    padding-top : 2rem;
-    padding-right: 2rem;
+    /* padding-top : 2.5rem; */
+    cursor: pointer;
+    padding-right: 2.5rem;
     margin-top: 10%;
     width : 27px;
 }
@@ -62,7 +71,7 @@ nav{
 
 .hero-section{
     padding-top: 13rem;
-    height: 24rem;
+    height: 23rem;
 }
 
 .my-pic{
@@ -72,38 +81,42 @@ nav{
 
 }
 
+.subhead{
+    text-align: left;
+    padding-left: 2.3rem;
+    margin-top: 1rem;
+    margin-bottom: .6rem;
+    font-size: .9rem;
+    font-family: 'Titillium Web', sans-serif;
+    color: #6d6b6b;
+}
+
 .hero-section h1{
     width: 70%;
     line-height: 2.5rem;
     text-align: left;
-    padding-left: 2rem ;
+    padding-left: 2.3rem ;
     font-size: 2.5rem;
     margin : 0;
     font-family: 'Titillium Web', sans-serif;
 
 }
 
-.subhead{
-    text-align: left;
-    padding-left: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-size: .9rem;
-    font-family: 'Titillium Web', sans-serif;
-}
 
 .subhead2{
     line-height: 1.8rem;
-    width: 80%;
+    width: 17rem;
     text-align: left;
-    padding-left: 2rem;
-    margin-top: 1.5rem;
-    margin-bottom: 4rem;
+    padding-left: 2.3rem;
+    margin-top: .8rem;
+    margin-bottom: 2rem;
     font-size: 1.4rem;
     font-family: 'Titillium Web', sans-serif;
+    
 }
 
 .primary-link{
+    margin-left: 2.3rem;
     font-size: .8rem;
     text-decoration: none;
     color : white;
@@ -111,4 +124,146 @@ nav{
     background-color : var(--primary-color);
     border-radius: .5rem;
     border-color: white;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.primary-link:hover{
+    margin-left: 2.3rem;
+    font-size: .8rem;
+    text-decoration: none;
+    color : var(--primary-color);
+    padding : 0.5rem 1rem;
+    background-color :white;
+    border-radius: .5rem;
+    border: 2px solid var(--primary-color);
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.intro-container {
+    height : 38rem;
+    background-color: white;
+}
+
+.intro-section {
+    /* padding-left: 2.3rem;
+    padding-top: 10rem; */
+    padding: 10rem 2.3rem;
+    align-items: center;
+
+}
+
+.intro-section h1{
+    font-weight: lighter;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.black-line{
+    width: 9.3rem;
+    height: 1.5px;
+    background-color: black;
+}
+
+.intro-text {
+    
+    text-align: left;
+    width: 16rem;
+    font-size : 1rem;
+}
+
+.skills-container{
+    /* padding-left: 2.3rem; */
+    height : 45rem;
+}
+
+.skills-container h1{
+    padding-left: 2.3rem;
+    font-weight: lighter;
+    
+}
+
+.info-cards{
+    text-align: center;
+   
+}
+
+.card{
+    background-color: white;
+    height: 11rem;
+    align-content: center;
+    width: 17.5rem;
+    margin: 0 auto 2rem auto;
+    border-radius: 5px;
+    box-shadow: 0 1.5px 3px 0 rgba(0,0,0,0.2);
+    transition: 0.5s;
+}
+
+.card:hover {
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+}
+
+.card img{
+    padding-top: .7rem;
+    width: 2.5rem;
+    margin:auto;
+}
+
+.card-image-1{
+    height: 6.5rem;
+    background: url('https://appsmaventech.com/images/blog/The-Evolution-Of-Web-Development-Via-Machine-Learning.jpg');
+    background-repeat: no-repeat;
+    background-size: 18rem 6.5rem;
+
+}
+
+.card-image-2{
+    height: 6.5rem;
+    background: url('https://www.learnupon.com/wp-content/uploads/Video-editing-basics-for-eLearning1200x628.jpg');
+    background-repeat: no-repeat;
+    background-size: 17.5rem 8rem;
+}
+
+.card-image-3{
+    height: 6.5rem;
+    background: url('https://bloggingwizard.com/wp-content/uploads/2016/10/Image-Editing-Tools-750x300.png');
+    background-repeat: no-repeat;
+    background-size: 17.5rem 8rem;
+}
+
+.card-heading h4 {
+    text-transform : uppercase;
+    margin : .5rem 0 0 0;
+    font-size: 1.2rem;
+    font-size: .9rem;
+}
+
+.card-heading p{
+    max-width: 15rem ;
+    margin: 0rem auto ;
+    font-size: .8rem;
+}
+footer {
+    padding-left: 2.3rem;
+    background-color: white;
+    height: 20rem;
+}
+
+footer h1{
+    padding-top: 2rem;
+    font-weight: lighter;
+    margin-bottom: 0;
+}
+
+footer ul{
+    padding-top: 2rem;
+    line-height: 3rem;
+}
+
+footer ul li span{
+    padding-left: 1rem;
+}
+
+footer a{
+    color:black;
+    text-decoration: none;
 }
