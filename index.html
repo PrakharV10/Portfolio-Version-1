@@ -10,18 +10,19 @@
 <body>
     <div class= "grey-container container">
 
-        <header>
+        <header id="home">
             <div>PV</div>
     
             <nav>
                 <a href="#" class="hide-desktop">
                     <img src="images/ham.svg" alt="Toggle menu" class="menu" id="menu">
                 </a>
-                <ul class = "show-desktop hide-mobile">
-                    <li><img src = "/images/exit.svg" alt="exit" class = "exit-btn hide-desktop"></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Projects</a></li>
+                <ul class = "show-desktop hide-mobile" id="nav">
+                    <li id="exit" class = "exit-btn hide-desktop"><img src = "/images/exit.svg" alt="exit" ></li>
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#contact">Contact info</a></li>
                 </ul>
             </nav>
         </header>
@@ -31,7 +32,7 @@
 
             <p class="subhead">Web developer & Graphic designer.</p>
             <h1>Prakhar Varshney</h1>
-            <P class="subhead2">I'm a beginner Web-Developer, an intermediate Graphic Designer & an expert learner. </P>
+            <P class="subhead2">I'm a beginner Web-Developer, an intermediate Graphics Designer & an expert learner. </P>
             
 
             <a href = "#" class="primary-link">VIEW MY WORK</a> 
@@ -43,7 +44,7 @@
             
             <h1>ABOUT ME</h1>
             <!-- <div class="black-line"></div> -->
-            <p class="intro-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <p class="intro-text">An aspiring Full-stack Developer, looking to acquire professional skills and being upto-date with the futuristic technologies. Started off as a Mechanical Engineer, took a turn towards Graphic Designing, took another right towards Web-Development. </p>
         </div>
         
     </div>
@@ -80,29 +81,41 @@
                     <p>Using Adobe Photoshop, Adobe Illustrator</p>
                 </div>
             </div>
+            <div class="card">
+                <div class="card-image-4">
+                <!-- <img src="/images/js-square-brands.svg" > -->
+                </div>
+                <div class="card-heading">
+                    <h4>Content Writing</h4>
+                    <p>A pen, a paper and some topic to think about!</p>
+                </div>
+            </div>
         </div>
     </div>
 
     <footer class="footer-container container">
         
-        <h1>Get In Touch</h1>
+        <h1>Get In Touch - </h1>
         <!-- <div class="black-line"></div> -->
 
-        <ul class="contacts">
+        <ul class="contacts" id="contact">
             <li>
-                <i class="fa fa-github fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-github fa-lg" 
+                style="color: white;"aria-hidden="true"></i>
                 <span><a href = "https://github.com/PrakharV10" target ="_blank">GitHub</a></span>
             </li>
             <li>
-                <i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-linkedin fa-lg" 
+                style="color: white;"aria-hidden="true"></i>
                 <span><a href = "https://www.linkedin.com/in/prakhar-varshney-6b3a92181/" target="_blank">LinkedIn</a></span>
             </li>
             <li>
-                <i class="fa fa-phone fa-lg" aria-hidden="true"></i>
-                <span>+91 9462867677</span>
+                <i class="fa fa-phone fa-lg" 
+                style="color: white;"aria-hidden="true"></i>
+                <span style="color:#FAFAFA;">+91 9462867677</span>
             </li>
             <li>
-                <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-instagram fa-lg" style="color: white;" aria-hidden="true"></i>
                 <span><a href = "https://www.instagram.com/the_vicious.guy/" target="_blank">Instagram</a></span>
             </li>
             
@@ -111,6 +124,22 @@
 
     </footer>
 
+    <script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click',function(e){
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        })
+
+        exit.addEventListener('click',function(e){
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        })
+
+    </script>
     
 </body>
 </html>

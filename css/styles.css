@@ -27,12 +27,46 @@ ul{
     padding: 0;
 }
 
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 100;
+    padding : 1em 2em;
+    text-align: center;
+}
+
+nav ul li a:hover{
+    background-color: #262f3b;
+}
+
+.exit-btn{
+    margin-bottom: 1rem;
+    margin-top: -2rem;
+    padding: 0 2rem; 
+    cursor: pointer;
+    text-align: right ;
+}
 .container{
     text-align: left;
 }
 
 .hide-mobile{
     display: none;
+    /* position: fixed;
+    background-color: var(--primary-color); */
+
+}
+
+nav ul{
+    position: fixed;
+    width : 60%;
+    top:0;
+    right:0;
+    background: var(--primary-color);
+    height: 36%;
+    padding-top: 3em;
+
 }
 
 header{
@@ -105,7 +139,7 @@ nav{
 
 .subhead2{
     line-height: 1.8rem;
-    width: 17rem;
+    width: 75%;
     text-align: left;
     padding-left: 2.3rem;
     margin-top: .8rem;
@@ -167,13 +201,13 @@ nav{
 .intro-text {
     
     text-align: left;
-    width: 16rem;
+    width: 90%;
     font-size : 1rem;
 }
 
 .skills-container{
     /* padding-left: 2.3rem; */
-    height : 45rem;
+    height : 55rem;
 }
 
 .skills-container h1{
@@ -194,19 +228,19 @@ nav{
     width: 17.5rem;
     margin: 0 auto 2rem auto;
     border-radius: 5px;
-    box-shadow: 0 1.5px 3px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
     transition: 0.5s;
 }
 
 .card:hover {
-    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.card img{
+/* .card img{
     padding-top: .7rem;
     width: 2.5rem;
     margin:auto;
-}
+} */
 
 .card-image-1{
     height: 6.5rem;
@@ -230,10 +264,16 @@ nav{
     background-size: 17.5rem 8rem;
 }
 
+.card-image-4{
+    height: 6.5rem;
+    background: url('https://avivdigital.in/wp-content/uploads/bfi_thumb/How-to-Become-a-Content-Writer-wqr4osp9vtj3j46mjn2fwg.jpg');
+    background-repeat: no-repeat;
+    background-size: 17.5rem 8rem;
+}
+
 .card-heading h4 {
     text-transform : uppercase;
     margin : .5rem 0 0 0;
-    font-size: 1.2rem;
     font-size: .9rem;
 }
 
@@ -244,11 +284,12 @@ nav{
 }
 footer {
     padding-left: 2.3rem;
-    background-color: white;
+    background-color: var(--primary-color);
     height: 20rem;
 }
 
 footer h1{
+    color:var(--grey);
     padding-top: 2rem;
     font-weight: lighter;
     margin-bottom: 0;
@@ -264,6 +305,197 @@ footer ul li span{
 }
 
 footer a{
-    color:black;
+    color:var(--grey);
     text-decoration: none;
+}
+
+@media only screen and (min-width:650px){
+    header div{
+        padding-top: 1.3rem;
+    }
+    .menu{
+        padding-top: 1.3rem;
+    }
+    .subhead{
+        font-size: 1.1rem;
+    }
+
+    .hero-section h1{
+        font-size: 3.5rem;
+    }
+
+    .subhead2{
+        padding-top: 1rem;
+    }
+
+    .intro-section {
+        padding-top: 8rem;
+    }
+
+    .intro-text{
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (min-width : 1100px){
+
+    header div{
+        padding-top: 5rem;
+        padding-left: 5rem;
+        font-size: 2rem;
+    }
+
+    .show-desktop{
+        display: block;
+    }
+
+    .hide-desktop{
+        display: none;
+    }
+
+    nav ul{
+        position: inherit;
+        width: auto;
+        background: none;
+        height: auto;
+        display: flex;
+        padding-top: 5rem;
+        padding-right: 2rem;;
+    }
+
+    nav ul li{
+        float:left;
+    }
+
+    nav ul li a{
+        color: var(--primary-color);
+        background-color: inherit;
+    }
+
+    nav ul li a:hover{
+        background-color: inherit;
+        color: black;
+    }
+
+    .hero-section{
+
+        padding-top: 12rem;
+        height: 25rem;
+        padding-left:  17rem;
+    }
+
+    .hero-section h1{
+        padding-top: 1rem;
+        font-size:4.5rem;
+    }
+    .subhead{
+        font-size: 1.4rem;
+    }
+
+    .subhead2{
+        line-height: 3rem;
+        padding-top: 1.2rem;
+        font-size: 2.3rem;
+    }
+
+    .primary-link{
+        font-size: 1.2rem;
+    }
+
+    .primary-link:hover{
+        font-size: 1.2rem;
+        transition-duration: .5s;
+    }
+
+    .intro-container{
+        height: 43rem;
+    }
+
+    .intro-section{
+        padding-top:13rem;
+    }
+
+    .intro-section h1{
+        text-align: center;
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .intro-text{
+        margin:auto;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .skills-container{
+        height: 40rem;
+    }
+    
+    .skills-container h1{
+        padding:0;
+        text-align: center;
+        font-size: 2.2rem;
+        margin-bottom: 3rem;
+    }
+
+    .info-cards{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 70rem;
+        width : 95%;
+        margin:auto;
+    }
+
+    .card{
+        height: 13.3rem;
+        width: 19.7em;
+        
+    } 
+
+    .card-image-1{
+        height: 7.5rem;
+        background-size: 19.7rem 7.5rem;
+    
+    }
+    .card-image-2{
+        height: 7.5rem;
+        background-size: 19.7rem 7.5rem;
+    
+    }
+    .card-image-3{
+        height: 7.5rem;
+        background-size: 19.7rem 7.5rem;
+    
+    }
+
+    .card-image-4{
+        height: 7.5rem;
+        background-size: 21rem 8.5rem;
+    
+    }
+
+    .card-heading h4 {
+        font-size: 1.2rem;
+    }
+
+    .card-heading p{
+        font-size: .9rem;
+    }
+    
+    footer{
+        height: 12rem;
+    }
+    footer h1{
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    footer a{
+        font-size: 1.2rem;
+    }
+
+    .contacts{
+        display: flex;
+        justify-content: space-around;
+    }
 }
