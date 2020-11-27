@@ -15,18 +15,21 @@ body {
     padding:0;
 }
 
+/* Globally defined color */
 :root {
     --primary-color : #1F2937;
     --grey : #ecf0f9;
 }
 
 
+/* Unordered list */
 ul{
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
+/* Links in Nav bar */
 nav ul li a{
     text-decoration: none;
     color: white;
@@ -36,10 +39,12 @@ nav ul li a{
     text-align: center;
 }
 
+/* Hover for Links in Nav bar*/
 nav ul li a:hover{
     background-color: #262f3b;
 }
 
+/*exit button for menu */
 .exit-btn{
     margin-bottom: 1rem;
     margin-top: -2rem;
@@ -47,17 +52,13 @@ nav ul li a:hover{
     cursor: pointer;
     text-align: right ;
 }
-.container{
-    text-align: left;
-}
 
+/* Hide in mobile-view */
 .hide-mobile{
     display: none;
-    /* position: fixed;
-    background-color: var(--primary-color); */
-
 }
 
+/* Unordered Lists in Navigation */
 nav ul{
     position: fixed;
     width : 60%;
@@ -69,6 +70,7 @@ nav ul{
 
 }
 
+/* Main Page Content */
 header{
     background-color: #FAFAFA;
     display: flex;
@@ -289,6 +291,7 @@ footer {
 }
 
 footer h1{
+    margin-top: 0;
     color:var(--grey);
     padding-top: 2rem;
     font-weight: lighter;
@@ -308,6 +311,37 @@ footer a{
     color:var(--grey);
     text-decoration: none;
 }
+
+/* Projects Page */
+.hero-project{
+    background-color: white;
+    margin-bottom: 0rem;
+    padding-bottom: 1rem;
+}
+
+.hero-project h2{
+    width:90%;
+    font-weight: lighter;
+    padding: 2rem 0 0 ;
+    margin-bottom: 0;
+    line-height: 1.8rem;
+}
+
+.hero-project p{
+    width:85%;
+}
+
+.project-link1{
+    text-decoration: none;
+    color : red;
+}
+
+.project-link2{
+    text-decoration: none;
+    color : blue;
+}
+
+
 
 @media only screen and (min-width:650px){
     header div{
@@ -335,6 +369,7 @@ footer a{
     .intro-text{
         font-size: 1.5em;
     }
+    
 }
 
 @media only screen and (min-width : 1100px){
@@ -370,11 +405,13 @@ footer a{
     nav ul li a{
         color: var(--primary-color);
         background-color: inherit;
+        
     }
-
+    
     nav ul li a:hover{
         background-color: inherit;
-        color: black;
+        color: red;
+        /* text-decoration: underline; */
     }
 
     .hero-section{
@@ -497,5 +534,54 @@ footer a{
     .contacts{
         display: flex;
         justify-content: space-around;
+    }
+
+    /* ol {
+        list-style: none;
+    } */
+
+    /* .hero-project h2{
+        font-size: 1.7rem;
+        text-align: center;
+        margin:auto;
+    }
+
+    .project-container{
+        text-align: center;
+    }
+
+    .hero-project p{
+        margin: auto;
+        text-align: center;
+        width : 40%
+    } */
+    .hero-project{
+        padding-top: 2rem;
+    }
+
+    .hero-project ol{
+        font-size: 1.5rem;
+        padding-left: 5rem;
+    }
+
+    .hero-project h2{
+        font-size: 2rem;
+        padding-bottom: .5rem;
+    }
+
+    .hero-project small{
+        font-size: 1rem;
+    }
+
+    .hero-project p{
+        font-size: 1.2rem;
+    }
+
+    .project-link1{
+        font-size: 1.2rem;
+    }
+    
+    .project-link2{
+        font-size: 1.2rem;
     }
 }

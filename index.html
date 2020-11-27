@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class= "grey-container container">
+    <div class= "grey-container ">
 
         <header id="home">
             <div>PV</div>
@@ -20,8 +20,8 @@
                 <ul class = "show-desktop hide-mobile" id="nav">
                     <li id="exit" class = "exit-btn hide-desktop"><img src = "/images/exit.svg" alt="exit" ></li>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#">Blogs</a></li>
-                    <li><a href="#">Projects</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="projects.html">Projects</a></li>
                     <li><a href="#contact">Contact info</a></li>
                 </ul>
             </nav>
@@ -35,11 +35,11 @@
             <P class="subhead2">I'm a beginner Web-Developer, an intermediate Graphics Designer & an expert learner. </P>
             
 
-            <a href = "#" class="primary-link">VIEW MY WORK</a> 
+            <a href = "projects.html" class="primary-link">VIEW MY WORK</a> 
         </section>        
     </div>
 
-    <div class="intro-container container">
+    <div class="intro-container">
         <div class="intro-section">
             
             <h1>ABOUT ME</h1>
@@ -48,7 +48,7 @@
         </div>
         
     </div>
-    <div class= "skills-container container">
+    <div class= "skills-container">
         
         <h1>SKILLS</h1>
         <!-- <div class="black-line"></div> -->
@@ -93,7 +93,7 @@
         </div>
     </div>
 
-    <footer class="footer-container container">
+    <footer class="footer-container">
         
         <h1>Get In Touch - </h1>
         <!-- <div class="black-line"></div> -->
@@ -124,22 +124,7 @@
 
     </footer>
 
-    <script>
-        var menu = document.getElementById('menu');
-        var nav = document.getElementById('nav');
-        var exit = document.getElementById('exit');
-
-        menu.addEventListener('click',function(e){
-            nav.classList.toggle('hide-mobile');
-            e.preventDefault();
-        })
-
-        exit.addEventListener('click',function(e){
-            nav.classList.add('hide-mobile');
-            e.preventDefault();
-        })
-
-    </script>
+    <script src="/Js/myscript.js"></script>
     
 </body>
 </html>
