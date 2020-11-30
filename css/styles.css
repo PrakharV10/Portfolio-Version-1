@@ -341,7 +341,9 @@ footer a{
     color : blue;
 }
 
-
+.hero-blog {
+    min-height: 21rem;
+}
 
 @media only screen and (min-width:650px){
     header div{
