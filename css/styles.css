@@ -72,11 +72,11 @@ nav ul{
 
 /* Main Page Content */
 header{
-    background-color: #FAFAFA;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin:1.1rem 0rem ;
+    margin:0 0rem ;
+    padding-top: 1.1rem;
     
 }
 
@@ -101,6 +101,7 @@ nav{
     
 }
 .grey-container{
+    background-color: #FAFAFA;
     margin : 0;
     padding : 0;
 }
@@ -150,6 +151,7 @@ nav{
     font-family: 'Titillium Web', sans-serif;
     
 }
+
 
 .primary-link{
     margin-left: 2.3rem;
@@ -538,25 +540,6 @@ footer a{
         justify-content: space-around;
     }
 
-    /* ol {
-        list-style: none;
-    } */
-
-    /* .hero-project h2{
-        font-size: 1.7rem;
-        text-align: center;
-        margin:auto;
-    }
-
-    .project-container{
-        text-align: center;
-    }
-
-    .hero-project p{
-        margin: auto;
-        text-align: center;
-        width : 40%
-    } */
     .hero-project{
         padding-top: 2rem;
     }
@@ -586,4 +569,6 @@ footer a{
     .project-link2{
         font-size: 1.2rem;
     }
-}
+
+    
+    }
